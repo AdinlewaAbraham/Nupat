@@ -1,0 +1,72 @@
+.grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    360deg,
+    #091242 -11.11%,
+    rgba(9, 18, 66, 0) 90.28%
+  );
+}
+.yellowgrad {
+  background: linear-gradient(
+    94.06deg,
+    #ffb629 -1.21%,
+    #ffda56 58.66%,
+    #ffd7a6 116.84%
+  );
+}
+.clipdiv {
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 45% 100%, 45% 55%, 0% 55%, 0 0);
+  background-image: url("https://imageup.me/images/d840a4f0-1081-4b65-8e31-c0a3608bb3ec.png");
+}
+.clipdivTwo {
+  background-image: url("https://imageup.me/images/be458a5a-b90d-44ca-a503-e34f224a59b7.png");
+}
+.smallyellowgrad {
+  background: linear-gradient(
+    94.06deg,
+    #ffb629 -1.21%,
+    #ffda56 58.66%,
+    #ffd7a6 116.84%
+  );
+}
+.gradbutton {
+  background: linear-gradient(
+    95deg,
+    #ffb629 -1.19%,
+    #ffda56 57.78%,
+    #ffd7a6 115.08%
+  );
+  width: 1920px;
+  height: 400px;
+}
+.commentgrad {
+  background: linear-gradient(
+    94.06deg,
+    #ffb629 -1.21%,
+    #ffda56 58.66%,
+    #ffd7a6 116.84%
+  );
+  width: 72.85px;
+  height: 72.85px;
+}
+.h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 41px;
+
+  color: #1c1f35;
+}
+.p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.52%;}
+.buttongrad{
+    background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
