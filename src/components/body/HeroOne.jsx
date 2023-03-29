@@ -71,7 +71,7 @@ const HeroOne = () => {
           <HeroComp header="Local Shipping Services" />
         </div>
       </div>
-      <div className="relative">
+      <div className="relative w-[1920px]">
         <img
           className="h-[504px] w-[1920px] object-cover"
           src="https://s3-alpha-sig.figma.com/img/1ea3/0812/2e06fc2b2e1943593343f58fd83b63cb?Expires=1681084800&Signature=nBZ6ekw7ZtbMdAH5ZsL9uTJ6GhnqzZNJuLya7Pi-SCQwJjFwE9l5mVIacHzUcrXM7FA~1N~AeUVh5sfLzCZFJcqnAixVAbZi8n3fzs3WE6T-Wcb-3D2~qN8Qw~n5Ry6wYZoyCvaP6uh5ozRjMP~cvsLXfsuuVg4yyUNqqhTgqZ3U81HjkMgPHsOziJ6ehq0hSEnbLhLmcRI0J6DAubyTEAWIODcrqhUKHSVdLAq78HacHyxySfyTO1ZvRMqM~g1bYaqZRHzV0zhyCkfAFHZxxHcK0hpUPYDMh9awdRFjuqJvsmHRrv32PkMsBcg5Dab0XhcYieN5s8NLFOs2j9bVhQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
@@ -106,7 +106,7 @@ const HeroOne = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[500px] text-black flex justify-center ">
+      <div className="mt-[500px] text-black flex justify-center w-[1920px]">
         <div className="flex items-center border border-black border-x-0 py-[23px] px-[106px]">
           <span className="text-[50px] font-[600]"> 1294</span>{" "}
           <div className="w-[17px] h-[17px] mx-[16px] smallyellowgrad"></div>{" "}
@@ -118,8 +118,8 @@ const HeroOne = () => {
           Satisfied Clients
         </div>
       </div>
-      <div className="text-black flex justify-center flex-col">
-        <h2 className="text-center text-[35px] font-[600] leading-[41px]">
+      <div className="text-black flex justify-center flex-col  w-[1920px]">
+        <h2 className="text-center text-[35px] font-[600] leading-[41px] mt-[90px]">
           Transporting Across The World
         </h2>
         <div className="gradbutton relative  flex justify-center mt-[300px]">

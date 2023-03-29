@@ -2,7 +2,7 @@ import React from "react";
 
 const Content = () => {
   return (
-    <div className="bg-myBlue-100  text-white">
+    <div className="bg-myBlue-100  text-white  w-[1920px]">
       <div className="flex px-[360px] py-[146px]">
         <div className="">
           <h2 className="h2 text-white">Get in touch with us</h2>
