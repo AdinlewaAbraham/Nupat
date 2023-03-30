@@ -29,13 +29,13 @@ const TestimonalCard = (p) => {
           </svg>
         </div>
       </div>
-      <p>
+      <p className="mt-[20px]">
         Leverage agile frameworks to provide a robust synopsis for strategy
         foster collaborative thinking to further the overall value proposition.
         Organically grow the holistic world view of disruptive innovation via
         workplace diversity and empowerment.
       </p>
-      <div className="flex">
+      <div className="flex mt-[32px]">
         <svg
           width="30"
           height="28"
@@ -123,11 +123,16 @@ const CircleText = (p) => {
 };
 const Testimonal = () => {
   return (
-    <div className="w-[1920px]">
+    <div className="w-[1920px] ">
       <div className="mt-[101px]">
-        <h2 className="ml-[360px] text-[35px] font-[600] leading-[41px] ">
-          What Our Customer Say
-        </h2>
+        <div className="flex justify-between px-[360px]">
+          <h2 className="text-[35px] font-[600] leading-[41px] ">
+            What Our Customer Say
+          </h2>
+          <div>
+            <img src="https://i.ibb.co/KygwCxb/Aerrow.png" alt="" />
+          </div>
+        </div>
         <div className="flex w-[1920px] justify-center px-[360px] mt-[40px]">
           <TestimonalCard
             header="Kathleen Smith"
@@ -184,9 +189,18 @@ const Testimonal = () => {
       <div className="my-[134px] px-[360px]">
         <h2 className="h2 text-center mb-[30px]">Meet Expert Team</h2>
         <div className="flex justify-between">
-          <TransportersCard name="Jessca Arow" img="https://imageup.me/images/91437713-34b6-4ffd-9f9a-5908824f2e4d.png"/>
-          <TransportersCard name="Kathleen Smith" img="https://imageup.me/images/e1b894fb-959c-4e10-ac45-640a89f23a4e.png"/>
-          <TransportersCard name="Rebecca Tylor" img="https://imageup.me/images/02f7319f-b25c-443d-b633-4668ec888a19.png"/>
+          <TransportersCard
+            name="Jessca Arow"
+            img="https://imageup.me/images/91437713-34b6-4ffd-9f9a-5908824f2e4d.png"
+          />
+          <TransportersCard
+            name="Kathleen Smith"
+            img="https://imageup.me/images/e1b894fb-959c-4e10-ac45-640a89f23a4e.png"
+          />
+          <TransportersCard
+            name="Rebecca Tylor"
+            img="https://imageup.me/images/02f7319f-b25c-443d-b633-4668ec888a19.png"
+          />
         </div>
       </div>
     </div>

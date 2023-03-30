@@ -8,6 +8,14 @@
     rgba(9, 18, 66, 0) 90.28%
   );
 }
+.gradsmall {
+  position: absolute;
+  top: 0px ;
+  left: 0;
+  opacity: 0.3;
+  background: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 86%);
+  background-blend-mode: multiply;
+}
 .yellowgrad {
   background: linear-gradient(
     94.06deg,
@@ -59,13 +67,44 @@
 
   color: #1c1f35;
 }
-.p{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 151.52%;}
-.buttongrad{
-    background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+.p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 151.52%;
+}
+.buttongrad {
+  background: linear-gradient(
+    94.06deg,
+    #ffb629 -1.21%,
+    #ffda56 58.66%,
+    #ffd7a6 116.84%
+  );
+}
+.inputdiv input {
+  background: #091242;
+  border: 1px solid #4e5683;
+  margin-left: 28px;
+}
+.ul > li {
+  padding: 44px 76px;
+}
+.opac {
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ispace > i {
+  padding-right: 27px;
+}
+
+.navul li {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135.02%;
 }
 @tailwind base;
 @tailwind components;
