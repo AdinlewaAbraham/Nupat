@@ -1,4 +1,5 @@
 import React from "react";
+import Tag from "./Tag";
 
 const TestimonalCard = (p) => {
   return (
@@ -9,7 +10,7 @@ const TestimonalCard = (p) => {
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <img src={`${p.imgSRC}`} alt="" className="rounded-full" />
-          <div className=" ">
+          <div className="ml-[9px]" style={{ color: `${p.hcolor}` }}>
             <h3>{p.header}</h3>
             <p>{p.paragraph}</p>
           </div>
@@ -29,7 +30,7 @@ const TestimonalCard = (p) => {
           </svg>
         </div>
       </div>
-      <p className="mt-[20px]">
+      <p className="mt-[20px] p" style={{ color: `${p.mcolor}` }}>
         Leverage agile frameworks to provide a robust synopsis for strategy
         foster collaborative thinking to further the overall value proposition.
         Organically grow the holistic world view of disruptive innovation via
@@ -105,7 +106,12 @@ const TransportersCard = (p) => {
   return (
     <div className="w-[364px] text-white">
       <img src={p.img} alt="" />
-      <div className="bg-myBlue-100 h-[112px] px-[34px] pt-[42px]">
+      <div className="bg-myBlue-100 h-[112px] px-[34px] pt-[42px] relative">
+        <img
+          className="absolute bottom-[80px] right-0"
+          src={p.socialimg}
+          alt=""
+        />
         <h3>{p.name}</h3>
         <p>Designer</p>
       </div>
@@ -116,7 +122,7 @@ const TransportersCard = (p) => {
 const CircleText = (p) => {
   return (
     <div className="flex items-center my-[20px]">
-      <div className="smallyellowgrad h-[63px] w-[63px] rounded-full"></div>
+      <img src={p.img} alt="" />
       <p className="font-[400] text-[20px] leading-23 ml-[12px]">{p.text}</p>
     </div>
   );
@@ -126,9 +132,12 @@ const Testimonal = () => {
     <div className="w-[1920px] ">
       <div className="mt-[101px]">
         <div className="flex justify-between px-[360px]">
-          <h2 className="text-[35px] font-[600] leading-[41px] ">
-            What Our Customer Say
-          </h2>
+          <div>
+            <Tag text="Testimonial" />
+            <h2 className="text-[35px] font-[600] leading-[41px] ">
+              What Our Customer Say
+            </h2>
+          </div>
           <div>
             <img src="https://i.ibb.co/KygwCxb/Aerrow.png" alt="" />
           </div>
@@ -140,6 +149,8 @@ const Testimonal = () => {
             bgColor="#F4F4F4"
             color="black"
             imgSRC="https://imageup.me/images/8531ab74-e72e-4da0-bd3b-33adefdcddaf.png"
+            mcolor="#666C89"
+            hcolor="#091242"
           />
           <TestimonalCard
             header="John Martin"
@@ -157,15 +168,20 @@ const Testimonal = () => {
         w-[929px] h-[610px] absolute top-[142px] left-[140px]
         "
           >
-            <div></div>
+            <img
+              src="https://i.ibb.co/tJZfrhD/Feature-Tag.png"
+              alt=""
+              className="absolute bottom-0 right-[293px]"
+            />
           </div>
         </div>
 
         <div className="px-[162px] w-[960px] h-[897px] bg-[#F4F4F4]  items-center">
           <div className="h-[610px] flex flex-col justify-center mt-[150px]">
             <div className="">
-              <h2 className="h2">We create opportunity to reach potential</h2>
-              <p className="p mt-[18px]">
+              <Tag text="Why Choose" />
+              <h2 className="h2 mt-[10pxFive things you should have ready for your broker]">We create opportunity to reach potential</h2>
+              <p className="p mt-[18px] text-[#666C89] text-[16px] font-[500] leading-[24px]">
                 Leverage agile frameworks to provide a robust synopsis for
                 strategy foster collaborative thinking to further the overall
                 value proposition.{" "}
@@ -173,33 +189,57 @@ const Testimonal = () => {
             </div>
             <div className="flex mt-[61px]">
               <div className="mr-[72px]">
-                <CircleText text="Safe Package" />
-                <CircleText text="Global Tracking" />
-                <CircleText text="In Time Delivery" />
+                <CircleText
+                  text="Safe Package"
+                  img="https://i.ibb.co/PtnV2gw/Icon.png"
+                />
+                <CircleText
+                  text="Global Tracking"
+                  img="https://i.ibb.co/1TBdfyN/Icon.png"
+                />
+                <CircleText
+                  text="In Time Delivery"
+                  img="https://i.ibb.co/JRcVj6q/Icon.png"
+                />
               </div>
               <div>
-                <CircleText text="Ship Everyware" />
-                <CircleText text="24/7 Support" />
-                <CircleText text="Transparant Pricing" />
+                <CircleText
+                  text="Ship Everyware"
+                  img="https://i.ibb.co/59fy44r/Icon.png"
+                />
+                <CircleText
+                  text="24/7 Support"
+                  img="https://i.ibb.co/KqdWDz5/Icon.png"
+                />
+                <CircleText
+                  text="Transparant Pricing"
+                  img="https://i.ibb.co/FqHPrGH/Icon.png"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="my-[134px] px-[360px]">
+        <div className="flex justify-center mb-[12px]">
+          <Tag text="The Transporters" />
+        </div>
         <h2 className="h2 text-center mb-[30px]">Meet Expert Team</h2>
         <div className="flex justify-between">
           <TransportersCard
             name="Jessca Arow"
             img="https://imageup.me/images/91437713-34b6-4ffd-9f9a-5908824f2e4d.png"
+            socialimg="https://i.ibb.co/h7gm9sn/Social-Media.png"
           />
           <TransportersCard
             name="Kathleen Smith"
             img="https://imageup.me/images/e1b894fb-959c-4e10-ac45-640a89f23a4e.png"
+            socialimg="https://i.ibb.co/6wS5bkb/Social-Media.png"
           />
           <TransportersCard
             name="Rebecca Tylor"
             img="https://imageup.me/images/02f7319f-b25c-443d-b633-4668ec888a19.png"
+            socialimg="https://i.ibb.co/Q6fZzm8/Social-Media.png"
           />
         </div>
       </div>

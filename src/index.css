@@ -10,7 +10,7 @@
 }
 .gradsmall {
   position: absolute;
-  top: 0px ;
+  top: 0px;
   left: 0;
   opacity: 0.3;
   background: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 86%);
@@ -86,6 +86,7 @@
   border: 1px solid #4e5683;
   margin-left: 28px;
 }
+
 .ul > li {
   padding: 44px 76px;
 }
@@ -105,6 +106,31 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 135.02%;
+}
+.inputspace > li {
+  padding-bottom: 17px;
+}
+.inputspacey > li {
+  margin-right: 40px;
+}
+.tagSmall {
+  width: 4px;
+  height: 33px;
+  background: linear-gradient(
+    94.06deg,
+    #ffb629 -1.21%,
+    #ffda56 58.66%,
+    #ffd7a6 116.84%
+  );
+}
+.tagBig {
+  
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 3px 9px;
+gap: 10px;
+background: rgba(4, 28, 55, 0.5);
 }
 @tailwind base;
 @tailwind components;

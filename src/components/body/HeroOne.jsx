@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../src/index.css";
+import Tag from "./Tag";
 
 const HeroComp = (p) => {
   return (
@@ -42,6 +43,7 @@ const HeroOne = () => {
     "
       >
         <div className="absolute top-[278px] w-[554px] ">
+          <Tag text="Logistics & Supply Chain Solutions" dark={true}/>
           <h1 className="font-[700] text-[60px] leading-[71px] w-[550px]">
             Your Gateway <br /> to any Destination in the World
           </h1>
@@ -50,13 +52,14 @@ const HeroOne = () => {
             in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus
             finibus, enim diam interdum nulla, sed laoreet risus lectus.{" "}
           </p>
-          <button className="w-[194px] h-[60px] bg-[url('https://i.ibb.co/zXQPYCD/Background.png')]">
+          <button className="w-[194px] h-[60px] text-black bg-[url('https://i.ibb.co/zXQPYCD/Background.png')]">
             Explore More
           </button>
         </div>
       </div>
       <div className="px-[360px] text-black flex  mt-[80px]">
         <div>
+          <Tag text="What We Do"/>
           <h2 className="font-[600] text-[35px] leading-[41px] w-[294px]">
             Safe & Reliable Cargo Solutions
           </h2>
@@ -374,6 +377,7 @@ const HeroOne = () => {
 
         <div className="p-[86px] absolute top-[400px] left-[20%] bg-white w-[1200px] text-black mb-[100px] flex flex-row justify-between">
           <div className="w-[472px]">
+            <Tag text="Why Us"/>
             <h2 className="text-[35px] font-[600] leading-[41px]">
               We provide full range global logistics solution
             </h2>
@@ -547,7 +551,7 @@ const HeroOne = () => {
         <h2 className="text-center text-[35px] font-[600] leading-[41px] mt-[90px]">
           Transporting Across The World
         </h2>
-        <div className="gradbutton relative  flex justify-center mt-[300px]">
+        <div className="gradbutton relative  flex justify-center mt-[280px]">
           <div className="flex justify-center mt-[35px] absolute top-[-283px]">
             <TransportImgCard
               imgsrc="https://imageup.me/images/32584582-6ded-4bc0-9a38-23c39d8e3244.png"

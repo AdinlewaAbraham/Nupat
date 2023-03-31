@@ -4,12 +4,10 @@ import Logo from "../logo/Logo";
 const ContactCard = (p) => {
   return (
     <div className="flex items-center mt-[30px]">
-      <div className="w-[63px] h-[63px] rounded-full bg-[#273270] border border-[#273270]">
-        <img src="" alt="" />
-      </div>
-      <div>
-        <p>{p.type}</p>
-        <p>{p.info}</p>
+      {p.img}
+      <div className="ml-[14px]">
+        <p className="text-[14px] font-[500] leading-[18px]">{p.type}</p>
+        <p className="text-[14px] font-[500] leading-[18px]">{p.info}</p>
       </div>
     </div>
   );
@@ -17,7 +15,7 @@ const ContactCard = (p) => {
 
 const Footer = () => {
   return (
-    <div className="bg-myBlue-100 w-[1920px] text-white ">
+    <div className="bg-myBlue-100 w-[1920px] text-white mt-[80px]">
       <div
         className=" bg-no-repeat bg-[url('https://i.ibb.co/XFCRxSY/Photo.png')]
         w-[1960px] h-[400px]
@@ -37,21 +35,70 @@ const Footer = () => {
             <li>Subscribe</li>
           </ul>
         </div>
-        <div className="px-[360px] flex justify-between mt-[40px]">
+        <div className="px-[360px] flex mt-[40px]">
           <div>
-            <p className="w-[319px] mb-[3px]">
+            <p className="w-[319px] mb-[3px] text-[#E8E8E8] mr-[95px]">
               Leverage agile frameworks to provide a robust synopsis for
               strategy collaborative thinking to further the overall value
               proposition.
             </p>
             <div>
-              hello
-              <ContactCard type="Email" info="contact@logistics.com" />
-              <ContactCard type="call Us" info="(00) 112 365 489" />
+        
+              <ContactCard
+                img={
+                  <svg
+                    width="63"
+                    height="63"
+                    viewBox="0 0 63 63"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="31.5"
+                      cy="31.5"
+                      r="31"
+                      fill="#111C55"
+                      stroke="#273270"
+                    />
+                    <path
+                      d="M40.996 23H23.004C22.4495 23 22 23.3755 22 23.8387V37.1613C22 37.6245 22.4495 38 23.004 38H40.996C41.5505 38 42 37.6245 42 37.1613V23.8387C42 23.3755 41.5505 23 40.996 23Z"
+                      stroke="#F6B426"
+                    />
+                    <path d="M22 23L32.4247 30L42 23.2294" stroke="#F6B426" />
+                  </svg>
+                }
+                type="Email"
+                info="contact@logistics.com"
+              />
+              <ContactCard
+                img={
+                  <svg
+                    width="63"
+                    height="63"
+                    viewBox="0 0 63 63"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="31.5"
+                      cy="31.5"
+                      r="31"
+                      fill="#111C55"
+                      stroke="#273270"
+                    />
+                    <path
+                      d="M23.9741 22.1408C23.8394 22.1449 23.7071 22.1743 23.5848 22.2272C23.4625 22.28 23.3528 22.3554 23.2622 22.4487C23.1715 22.542 23.1018 22.6514 23.0571 22.7704C23.0124 22.8894 22.9936 23.0156 23.0019 23.1416C23.1364 25.3015 23.7704 30.5716 26.8059 33.8583C30.4409 37.8181 35.1748 39.1824 40.0317 38.9808C40.292 38.9662 40.5368 38.8596 40.7165 38.6826C40.8962 38.5055 40.9975 38.2712 41 38.0268V34.5674C40.997 34.2446 40.8783 33.9322 40.663 33.6802C40.4476 33.4282 40.1482 33.2513 39.8127 33.1779L37.3804 32.6739C37.0796 32.6138 36.7664 32.6397 36.4815 32.7481C36.1965 32.8566 35.9528 33.0427 35.7819 33.2823L35.244 34.0454C35.1946 34.1153 35.1208 34.1668 35.0352 34.1911C34.9496 34.2154 34.8577 34.211 34.7752 34.1786C33.5379 33.6783 28.6081 31.5184 28.0663 27.8753C28.0557 27.805 28.0675 27.7333 28.1003 27.6692C28.1332 27.6051 28.1855 27.5516 28.2507 27.5154L29.2267 26.9574C29.4944 26.802 29.7047 26.5732 29.8291 26.3022C29.9535 26.0311 29.986 25.7308 29.9222 25.4419L29.3881 23.1236C29.31 22.7988 29.1142 22.5093 28.8339 22.3045C28.5537 22.0998 28.2064 21.9923 27.8511 22.0004L23.9741 22.1408Z"
+                      stroke="#F6B426"
+                    />
+                  </svg>
+                }
+                type="call Us"
+                info="(00) 112 365 489"
+              />
             </div>
           </div>
-          <div>
-            <ul>
+          <div className="mr-[140px]">
+            <ul className="inputspace">
               <li>About Us</li>
               <li>Our Team</li>
               <li>Our Project</li>
@@ -59,8 +106,8 @@ const Footer = () => {
               <li>Contact</li>
             </ul>
           </div>
-          <div>
-            <ul>
+          <div className="mr-[140px]">
+            <ul className="inputspace">
               <li>Style Guide</li>
               <li>Changelog</li>
               <li>Licenses</li>
@@ -72,7 +119,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Email here*"
-              className="w-[317px] h-[60px] bg-[#091242] border mb-[20px]"
+              className="w-[317px] h-[60px] bg-[#091242] border border-[#4E5683] mb-[20px] pl-[30px]"
             />
             <div className="flex justify-between items-center">
               <button className="buttongrad w-[148px] h-[60px] text-black">
@@ -128,11 +175,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-myBlue-100  border-t flex justify-between mt-[48px] px-[360px] w-[1920px] py-[15px]">
+      <div className="bg-myBlue-100  border-t flex items-center justify-between mt-[48px] px-[360px] w-[1920px] py-[15px] h-[73px]">
         <p>
           Copyright © TransitFlow | Designed by VictorFlow - Powered by Webflow.
         </p>
-        <ul className="flex ">
+        <ul className="inputspacey flex text-[#8388A7]">
           <li>Style Guide </li>
           <li> Licenses </li>
           <li>Changelog </li>
