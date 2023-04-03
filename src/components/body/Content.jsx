@@ -4,7 +4,7 @@ import Tag from "./Tag";
 const ContentComp = (p) => {
   return (
     <div className="mt-[32px] mb-[30px] flex">
-      <img src={p.img} alt="" className="mr-[14px]"/>
+      <img src={p.img} alt="" className="mr-[14px]" />
       <div>
         <p className="text-[14px] font-[500] leading-[18px]">{p.type}</p>
         <p>{p.info}</p>
@@ -19,7 +19,8 @@ const Content = () => {
       <div className="flex px-[360px] pt-[146px] w-full">
         <div className="relative">
           <div className="absolute top-[-40px]">
-          <Tag text="Contact" dark={true}/></div>
+            <Tag text="Contact" dark={true} />
+          </div>
           <h2 className="h2 text-white">Get in touch with us</h2>
           <p className="p w-[353px] mt-[3px] text-[16px] font-[500] leading-[24px]">
             Leverage agile frameworks to provide a robust synopsis for strategy
@@ -47,31 +48,32 @@ const Content = () => {
           <div>
             <input
               type="text"
-              className="w-[365px] h-[60px] pl-[30px]"
+              className="w-[365px] py-[21px] pl-[30px]"
               placeholder="Your name*"
             />
             <input
               type="text"
-              className="w-[365px] h-[60px] pl-[30px]"
+              className="w-[365px]  py-[21px] pl-[30px]"
               placeholder="Email*"
             />
           </div>
           <div>
             <input
               type="text"
-              className="w-[365px] mt-[32px] h-[60px] pl-[30px]"
+              className="w-[365px] mt-[32px] py-[21px] pl-[30px]"
               placeholder="Phone Number*"
             />
             <input
               type="text"
-              className="w-[365px] mt-[32px] h-[60px] pl-[30px]"
+              className="w-[365px] mt-[32px] py-[21px] pl-[30px]"
               placeholder="City*"
             />
           </div>
 
           <input
             type="text"
-            className="w-[757px] mt-[32px] h-[154px] pl-[30px] "
+            className="w-[757px] mt-[32px] pt-[21px] pb-[115px] pl-[30px] align-top"
+            style={{ verticalAlign: "top" }}
             placeholder="Your Message"
           />
 

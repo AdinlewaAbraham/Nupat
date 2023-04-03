@@ -159,7 +159,7 @@ const Blog = () => {
         />
         <div className="w-[943px] border-t"></div>
         <div className="flex justify-center">
-          <button className="bg-myBlue-100 w-[194px] h-[60px] text-white mt-[39px]">
+          <button className="bg-[url('https://i.ibb.co/58DH6dc/Background.png')] w-[194px] h-[60px] text-white mt-[39px]">
             More Blog
           </button>
         </div>

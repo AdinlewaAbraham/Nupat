@@ -29,7 +29,6 @@ const TransportImgCard = (p) => {
       <p className="text-myYellow-100 font-[500] text-[16px] leading-[24px]">
         {p.paragraph}
       </p>
-      <div className="gradsmall w-[320px] h-[407px] "></div>
     </div>
   );
 };
@@ -370,12 +369,11 @@ const HeroOne = () => {
       <div className="relative w-[1920px] mt-[132px]">
         <img
           className="h-[504px] w-[1920px] object-cover"
-          src="https://s3-alpha-sig.figma.com/img/1ea3/0812/2e06fc2b2e1943593343f58fd83b63cb?Expires=1681084800&Signature=nBZ6ekw7ZtbMdAH5ZsL9uTJ6GhnqzZNJuLya7Pi-SCQwJjFwE9l5mVIacHzUcrXM7FA~1N~AeUVh5sfLzCZFJcqnAixVAbZi8n3fzs3WE6T-Wcb-3D2~qN8Qw~n5Ry6wYZoyCvaP6uh5ozRjMP~cvsLXfsuuVg4yyUNqqhTgqZ3U81HjkMgPHsOziJ6ehq0hSEnbLhLmcRI0J6DAubyTEAWIODcrqhUKHSVdLAq78HacHyxySfyTO1ZvRMqM~g1bYaqZRHzV0zhyCkfAFHZxxHcK0hpUPYDMh9awdRFjuqJvsmHRrv32PkMsBcg5Dab0XhcYieN5s8NLFOs2j9bVhQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          src="https://i.ibb.co/JmBQxs0/Background.jpg"
           alt=""
         />
-        <div className="grad h-[504px] w-[1920px]"></div>
-
-        <div className="p-[86px] absolute top-[400px] left-[20%] bg-white w-[1200px] text-black mb-[100px] flex flex-row justify-between">
+      
+        <div className="p-[86px] absolute top-[370px] left-[358px] bg-white w-[1200px] text-black mb-[100px] flex flex-row justify-between">
           <div className="w-[472px]">
             <Tag text="Why Us"/>
             <h2 className="text-[35px] font-[600] leading-[41px]">
@@ -554,27 +552,27 @@ const HeroOne = () => {
         <div className="gradbutton relative  flex justify-center mt-[280px]">
           <div className="flex justify-center mt-[35px] absolute top-[-283px]">
             <TransportImgCard
-              imgsrc="https://imageup.me/images/32584582-6ded-4bc0-9a38-23c39d8e3244.png"
+              imgsrc="https://i.ibb.co/bHm2cfX/1.png"
               header="Liquid Transportation"
               paragraph="Premium Tankers"
             />
             <TransportImgCard
-              imgsrc="https://imageup.me/images/d4b51762-0b0e-4f4a-bb58-883366d2f5cd.png"
+              imgsrc="https://i.ibb.co/VwQDkVH/1.png"
               header="Packaging Solutions"
               paragraph="Warehouse Management"
             />
             <TransportImgCard
-              imgsrc="https://imageup.me/images/9f0f5ab4-04b2-41c8-acfc-c87bf8a0b873.png"
+              imgsrc="https://i.ibb.co/JHrR32r/1.png"
               header="Contract Logistics"
               paragraph="Road Transportation"
             />
             <TransportImgCard
-              imgsrc="https://imageup.me/images/a24b0bff-82bb-43f7-99e5-81f4836f9685.png"
+              imgsrc="https://i.ibb.co/qpjPFHP/1.png"
               header="Warehouse & Distribution"
               paragraph="Large Warehouse"
             />
             <TransportImgCard
-              imgsrc="https://imageup.me/images/e905a065-1fa2-483a-a9a7-7f2720d496b8.png"
+              imgsrc="https://i.ibb.co/kxYWsL3/1.png"
               header="Specialized Transport"
               paragraph="Ocean Transports"
             />
